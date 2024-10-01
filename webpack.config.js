@@ -29,8 +29,7 @@ module.exports = (env, argv) => {
         resolve: {
             extensions: [
                 '.tsx',
-                '.ts',
-                '.js'
+                '.ts'
             ],
             alias: {
                 '@/scripts': resolveDir('src/scripts'),
