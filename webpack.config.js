@@ -28,6 +28,8 @@ module.exports = (env, argv) => {
         },
         resolve: {
             extensions: [
+                '.jsx',
+                '.js',
                 '.tsx',
                 '.ts'
             ],
