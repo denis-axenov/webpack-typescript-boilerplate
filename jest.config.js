@@ -4,5 +4,6 @@ module.exports = {
     },
     transform: {
         "^.+\\.(t|j)sx?$": "@swc/jest",
-    }
+    },
+    passWithNoTests: true
 };
