@@ -1,4 +1,4 @@
-import ModuleInterface from "@/scripts/interfaces/module.interface"
+import ModuleInterface from "@/scripts/interfaces/module.interface";
 
 
 export default class Module {
