@@ -1,14 +1,14 @@
-const path = require('path');
-const Sass = require('sass');
-const MiniCssExtractPlugin = require('mini-css-extract-plugin');
-const HtmlWebpackPlugin = require('html-webpack-plugin');
-const ESLintPlugin = require('eslint-webpack-plugin');
-const StylelintPlugin = require('stylelint-webpack-plugin');
+import path from 'path';
+import * as Sass from 'sass';
+import MiniCssExtractPlugin from 'mini-css-extract-plugin';
+import HtmlWebpackPlugin from 'html-webpack-plugin';
+import ESLintPlugin from 'eslint-webpack-plugin';
+import StylelintPlugin from 'stylelint-webpack-plugin';
 
 
-module.exports = (env, argv) => {
+const resolveDir = (dir) => path.resolve(process.cwd(), dir);
 
-    const resolveDir = (dir) => path.resolve(__dirname, dir);
+export default (env, argv) => {
     const buildFolder = resolveDir('dist');
     const isProduction = argv.mode === 'production';
 
