@@ -4,9 +4,11 @@ import tsEslint from "typescript-eslint";
 import parser from "@typescript-eslint/parser";
 
 export default [
-    ...tsEslint.configs.recommended,
     {
-        ...eslint.configs.recommended,
+        plugins: {
+            ...eslint.configs.recommended,
+            ...tsEslint.configs.recommended
+        },
         files: [
             "src/scripts/**/*.ts"
         ],
