@@ -17,5 +17,9 @@
         "src/scripts/interfaces/*"
       ]
     }
-  }
+  },
+  "exclude": [
+    "node_modules",
+    "dist"
+  ]
 }
